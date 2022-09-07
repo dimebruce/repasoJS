@@ -1,0 +1,2387 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome file</title>
+    <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  </head>
+
+  <body class="stackedit">
+    <div class="stackedit__left">
+      <div class="stackedit__toc">
+        <ul>
+          <li>
+            <a href="#js">JS</a>
+            <ul>
+              <li>
+                <a href="#importar-un-archivo-de-js-en-html"
+                  >Importar un archivo de JS en HTML</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#variables">Variables</a>
+            <ul>
+              <li></li>
+              <li><a href="#let">let</a></li>
+              <li><a href="#const">const</a></li>
+              <li><a href="#rules-de-variables">Rules de variables</a></li>
+              <li><a href="#tipos-de-datos">Tipos de datos</a></li>
+              <li><a href="#undefined">Undefined</a></li>
+              <li><a href="#boolean">Boolean</a></li>
+              <li><a href="#number">Number</a></li>
+              <li>
+                <a href="#string-o-cadena-de-texto">String o cadena de texto</a>
+              </li>
+              <li><a href="#bigint">BigInt</a></li>
+              <li>
+                <a href="#cambiando-el-tipo-de-dato"
+                  >Cambiando el tipo de dato</a
+                >
+              </li>
+              <li><a href="#symbol">Symbol</a></li>
+              <li><a href="#null">Null</a></li>
+              <li><a href="#object">Object</a></li>
+              <li>
+                <a href="#diferencias-de-console.log-y-console.tablet"
+                  >Diferencias de console.log y console.Tablet</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#destructuring-object">Destructuring Object</a>
+            <ul>
+              <li>
+                <a href="#object-literal-enhacement"
+                  >Object Literal Enhacement</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#manipulación-de-objetos">Manipulación de objetos</a>
+            <ul>
+              <li>
+                <a href="#destructuring-con-dos-o-más-objetos"
+                  >Destructuring con dos o más objetos</a
+                >
+              </li>
+              <li>
+                <a href="#unir-dos-objetos-en-uno-sobreescribirlos"
+                  >Unir dos objetos en uno sobreescribirlos</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#arreglos--arrays">Arreglos / Arrays</a>
+            <ul>
+              <li>
+                <a href="#manipulación-de-arreglos">Manipulación de Arreglos</a>
+              </li>
+              <li>
+                <a href="#destructuring-con-arreglos"
+                  >Destructuring con arreglos</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#iteradores">Iteradores</a>
+            <ul>
+              <li></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#funciones">Funciones</a>
+            <ul>
+              <li>
+                <a href="#parametros-dentro-de-funciones"
+                  >Parametros dentro de Funciones</a
+                >
+              </li>
+              <li>
+                <a href="#return-dentro-de-las-funciones"
+                  >Return dentro de las funciones</a
+                >
+              </li>
+              <li><a href="#function-expression">Function Expression</a></li>
+              <li><a href="#arrow-functions">Arrow Functions</a></li>
+              <li>
+                <a href="#arrow-f.-con-arreglos.">Arrow F. con Arreglos.</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#array-methods-más-útiles">Array Methods más útiles</a>
+            <ul>
+              <li></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#condicionales">Condicionales</a>
+            <ul>
+              <li></li>
+            </ul>
+          </li>
+          <li><a href="#scope-de-variables">Scope de variables</a></li>
+          <li>
+            <a href="#dom">DOM</a>
+            <ul>
+              <li><a href="#queryselector">querySelector</a></li>
+              <li><a href="#queryselectorall">querySelectorAll</a></li>
+              <li>
+                <a href="#modificando-el-dom-desde-js"
+                  >Modificando el DOM desde JS</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#eventos-del-dom">Eventos del DOM</a>
+            <ul>
+              <li><a href="#evento-de-click">Evento de click</a></li>
+              <li><a href="#evento-de-inputs">Evento de inputs</a></li>
+              <li><a href="#evento-de-submit">Evento de submit</a></li>
+              <li>
+                <a href="#agregando-html-desde-js">Agregando HTML desde JS</a>
+              </li>
+              <li><a href="#imports-y-exports">Imports y Exports</a></li>
+              <li><a href="#exportando">Exportando</a></li>
+              <li><a href="#importando">Importando</a></li>
+              <li>
+                <a href="#exportando-e-importando-con-más-de-una-función"
+                  >Exportando e importando con más de una función</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#api">API’</a>
+            <ul>
+              <li>
+                <a href="#fetch-api---promises.">Fetch API - Promises.</a>
+              </li>
+              <li>
+                <a href="#cambiando-de-promises-a-async-y-await"
+                  >Cambiando de Promises a Async y Await</a
+                >
+              </li>
+              <li>
+                <a href="#conexiones-mmúltiples-con-async-y-await"
+                  >Conexiones mmúltiples con async y await</a
+                >
+              </li>
+              <li>
+                <a href="#iniciando-el-consumo-en-paralelo"
+                  >Iniciando el consumo en paralelo</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#comprobando-el-tiempo-de-consumo"
+              >Comprobando el tiempo de consumo</a
+            >
+            <ul>
+              <li><a href="#performance">Performance</a></li>
+              <li><a href="#template-strings">Template Strings</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="stackedit__right">
+      <div class="stackedit__html">
+        <h1 id="js">JS</h1>
+        <h2 id="importar-un-archivo-de-js-en-html">
+          Importar un archivo de JS en HTML
+        </h2>
+        <p>
+          Antes de la etiqueta de cierre necesitamos mandar a llamar el script o
+          fichero dónde se aloja nuestro JS.
+        </p>
+        <pre class="language-html"><code class="prism  language-html">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span>  <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>./js/archivo.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre>
+        <h1 id="variables">Variables</h1>
+        <p>
+          Es importante mencionar que no se necesita poner <em>;</em> al final
+          de la linea, porque JS es noble en ese sentido.
+        </p>
+        <p>
+          No se declara el tipo de dato de una variable como en otros lenguages,
+          JS lo detecta por defecto.
+        </p>
+        <p>Es de buenas practicas, usar camelCase para las variables</p>
+        <h3 id="tipos">Tipos</h3>
+        <ul>
+          <li>
+            <p>var</p>
+          </li>
+          <li>
+            <p>let</p>
+          </li>
+          <li>
+            <p>const</p>
+          </li>
+        </ul>
+        <p>
+          var es poco usada, JS se inicio con ese tipo de variable, pero
+          conforme pasó el tiempo se detecto vulnerabilidades y es donde
+          <strong>let</strong> y <strong>const</strong> surgen.
+        </p>
+        <h2 id="let">let</h2>
+        <p>Let tiene las siguientes ventajas</p>
+        <ul>
+          <li>
+            <p>Puede reasignar un nuevo valor a la variable</p>
+          </li>
+          <li>
+            <p>Pueden declararse sin ningun valor</p>
+          </li>
+        </ul>
+        <h2 id="const">const</h2>
+        <p>Const tiene las siguientes caracteristicas</p>
+        <ul>
+          <li>
+            <p>No se pueden reasignar</p>
+          </li>
+          <li>
+            <p>No se pueden declarar sin ningun valor</p>
+          </li>
+        </ul>
+        <p>
+          Const es más utilizado que let, más que nada por la interacción con el
+          DOM de HTML, pues este nunca cambia.
+        </p>
+        <h2 id="rules-de-variables">Rules de variables</h2>
+        <p>Las variables no pueden:</p>
+        <ul>
+          <li>
+            <p>Iniciar con números</p>
+          </li>
+          <li>
+            <p>… caracteres especiales</p>
+          </li>
+          <li>
+            <p>Guión bajo si está permitido</p>
+          </li>
+          <li>
+            <p>No pueden tener espacios</p>
+          </li>
+        </ul>
+        <h2 id="tipos-de-datos">Tipos de datos</h2>
+        <ul>
+          <li>
+            <p>Undefined</p>
+          </li>
+          <li>
+            <p>String</p>
+          </li>
+          <li>
+            <p>Boolean</p>
+          </li>
+          <li>
+            <p>Null</p>
+          </li>
+          <li>
+            <p>Object</p>
+          </li>
+          <li>
+            <p>Number</p>
+          </li>
+          <li>
+            <p>Function</p>
+          </li>
+        </ul>
+        <p>No existe array, se considera como objeto.</p>
+        <h2 id="undefined">Undefined</h2>
+        <p>
+          Es cuando no tiene un valor agregado a la variable. Existe un metodo
+          llamado <strong>typeof</strong> el cual nos ayuda a saber qué tipo de
+          dato es una variable.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span><span class="token punctuation">(</span>cliente<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <h2 id="boolean">Boolean</h2>
+        <p>
+          Su valor por defecto es binario, es decir sólo tiene dos opciones:
+          true o false
+        </p>
+        <h2 id="number">Number</h2>
+        <p>
+          En JS no importa si es el número es con decimal, negativo, fracciones,
+          enteros etc. Todos se van a considerar <strong>Number</strong>
+        </p>
+        <h2 id="string-o-cadena-de-texto">String o cadena de texto</h2>
+        <p>Estos siempre deben ir entre comillas sencillas o dobles.</p>
+        <pre class="language-js"><code class="prism  language-js">
+  
+
+<span class="token keyword">const</span>  alumno <span class="token operator">=</span> <span class="token string">"Adgar"</span>
+
+<span class="token keyword">const</span>  alumno <span class="token operator">=</span> <span class="token string">'Adgar'</span>
+
+</code></pre>
+        <h2 id="bigint">BigInt</h2>
+        <p>
+          Es para la representación de número muy, muy pero que muy grandes.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  numeroGrande <span class="token operator">=</span> <span class="token function">BigInt</span><span class="token punctuation">(</span><span class="token number">565665651651651608749541987419561491849</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <p>Estos no se pueden mezclar con números normales.</p>
+        <h2 id="cambiando-el-tipo-de-dato">Cambiando el tipo de dato</h2>
+        <p>Para ello existe esta sintaxis.</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  numeroString <span class="token operator">=</span> <span class="token string">"50"</span>
+
+<span class="token keyword">const</span>  numeroNoString <span class="token operator">=</span> <span class="token number">50</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">Number</span><span class="token punctuation">(</span>numeroString<span class="token punctuation">)</span> <span class="token operator">+</span>  numeroNoString<span class="token punctuation">)</span>
+
+</code></pre>
+        <h2 id="symbol">Symbol</h2>
+        <p>Siempre serán unicos dentro del programa, no sé repiten.</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  primerSymbol <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span>  segundoSymbol <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> primerSymbol  <span class="token operator">===</span>  segundoSymbol <span class="token punctuation">)</span>
+
+</code></pre>
+        <p>La salida será false.</p>
+        <blockquote>
+          <p>Nota: el operador de igualdad <strong>===</strong> estricto.</p>
+        </blockquote>
+        <h2 id="null">Null</h2>
+        <p>
+          Según la documentación de mozilla, la instancia de un null será por
+          default un <em>object</em>
+        </p>
+        <h2 id="object">Object</h2>
+        <p>
+          Las ventaja de los objetos es que se puede ver como un arbol de
+          viariables que tienen relacion entre ellas.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token comment">// Con variables</span>
+
+  
+
+<span class="token keyword">const</span>  productoV <span class="token operator">=</span> <span class="token string">"Tablet"</span>
+
+<span class="token keyword">const</span>  precio <span class="token operator">=</span> <span class="token number">300</span>
+
+<span class="token keyword">const</span>  disponible <span class="token operator">=</span> <span class="token boolean">true</span>
+
+  
+
+<span class="token comment">// Expresado lo mismo, pero con objeto.</span>
+
+  
+
+<span class="token keyword">const</span>  producto <span class="token operator">=</span> <span class="token punctuation">{</span>
+
+nombre<span class="token punctuation">:</span>  <span class="token string">"Tablet"</span><span class="token punctuation">,</span>
+
+precio<span class="token punctuation">:</span>  <span class="token number">300</span><span class="token punctuation">,</span>
+
+disponible<span class="token punctuation">:</span>  <span class="token boolean">true</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre>
+        <p>
+          Para ingresar a la propiedad / valor de un objeto, sólo basta de la
+          siguiente sintaxis.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>producto<span class="token punctuation">.</span>nombre<span class="token punctuation">)</span> <span class="token comment">//Tablet</span>
+
+</code></pre>
+        <h2 id="diferencias-de-console.log-y-console.tablet">
+          Diferencias de console.log y console.Tablet
+        </h2>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  producto <span class="token operator">=</span> <span class="token punctuation">{</span>
+
+nombre<span class="token punctuation">:</span>  <span class="token string">"Tablet"</span><span class="token punctuation">,</span>
+
+precio<span class="token punctuation">:</span>  <span class="token number">300</span><span class="token punctuation">,</span>
+
+disponible<span class="token punctuation">:</span>  <span class="token boolean">true</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>producto<span class="token punctuation">)</span>
+
+<span class="token comment">//</span>
+
+<span class="token punctuation">{</span>nombre<span class="token punctuation">:</span> <span class="token string">'Tablet'</span><span class="token punctuation">,</span> precio<span class="token punctuation">:</span> <span class="token number">300</span><span class="token punctuation">,</span> disponible<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>producto<span class="token punctuation">)</span>
+
+<span class="token comment">//</span>
+
+Key  Value
+
+nombre  <span class="token string">'Tablet'</span>
+
+precio  <span class="token number">300</span>
+
+disponible  <span class="token boolean">true</span>
+
+</code></pre>
+        <p>
+          En el log, aparece el objeto entre llaves, y se puede desplegar para
+          una mejor visualización, pero en lo personal prefiero
+          <strong>table</strong> cuando de objetos se habla, para que se note la
+          tabla.
+        </p>
+        <h1 id="destructuring-object">Destructuring Object</h1>
+        <p>
+          Es lo mismo que acceder a la propiedad pero de diferente sintaxis.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token comment">// Destructuring</span>
+
+<span class="token keyword">const</span> <span class="token punctuation">{</span> nombre <span class="token punctuation">}</span> <span class="token operator">=</span> producto
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>nombre<span class="token punctuation">)</span> <span class="token comment">// Tablet</span>
+
+</code></pre>
+        <h2 id="object-literal-enhacement">Object Literal Enhacement</h2>
+        <p>
+          Es lo opuesto a lo anterior, en vez de sacar el valor de una llave o
+          propiedad, insertas dentro del objeto.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  autenticado <span class="token operator">=</span> <span class="token boolean">true</span>
+
+<span class="token keyword">const</span>  user <span class="token operator">=</span> <span class="token string">"bruce"</span>
+
+  
+
+<span class="token keyword">const</span>  nuevoObjeto <span class="token operator">=</span> <span class="token punctuation">{</span>
+
+autenticado<span class="token punctuation">:</span>  autenticado<span class="token punctuation">,</span>
+
+user<span class="token punctuation">:</span>  user
+
+<span class="token punctuation">}</span>
+
+</code></pre>
+        <p>
+          Ahora, cuando la llave tiene el mismo nombre que el valor, se puede
+          simplificar así
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  autenticado <span class="token operator">=</span> <span class="token boolean">true</span>
+
+<span class="token keyword">const</span>  user <span class="token operator">=</span> <span class="token string">"bruce"</span>
+
+  
+
+<span class="token keyword">const</span>  nuevoObjeto <span class="token operator">=</span> <span class="token punctuation">{</span>
+
+autenticado<span class="token punctuation">,</span>
+
+user
+
+<span class="token punctuation">}</span>
+
+</code></pre>
+        <h1 id="manipulación-de-objetos">Manipulación de objetos</h1>
+        <p>
+          No sólo se puede acceder al valor de los objetos, ni insertarlos.
+          También se puede sobreescribirlos de la siguiente manera.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  producto <span class="token operator">=</span> <span class="token punctuation">{</span>
+
+nombre<span class="token punctuation">:</span>  <span class="token string">"Tablet"</span><span class="token punctuation">,</span>
+
+precio<span class="token punctuation">:</span>  <span class="token number">300</span><span class="token punctuation">,</span>
+
+disponible<span class="token punctuation">:</span>  <span class="token boolean">true</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+<span class="token comment">// Modificando el valor de nombre</span>
+
+  
+
+producto<span class="token punctuation">.</span>nombre <span class="token operator">=</span> <span class="token string">"Monitor Curvo"</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>producto<span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Vemos como el nombre tiene asignado la palabra <em>Tablet</em>, pero
+          en la segunda parte se le asigna un nuevo valor a la llave.
+        </p>
+        <p>
+          <strong>Para añadir</strong> una nueva llave con su valor, basta con
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+producto<span class="token punctuation">.</span>imagen <span class="token operator">=</span> <span class="token string">"imagenProducto.jpg"</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>producto<span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          La lógica para esto es que si el objeto no posee una llave nombrada
+          como la que estamos consultando, entonces la crea.
+        </p>
+        <p><strong>Para borrar</strong> tenemos</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">delete</span>  producto<span class="token punctuation">.</span>disponible
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>producto<span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Eso hará que se imprima todos los valores del objeto, excepto
+          <em>disponible</em>
+        </p>
+        <p>
+          <strong>Evitar sobreescribir y borrar</strong> valores dentro del
+          objeto
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+Object<span class="token punctuation">.</span><span class="token function">freeze</span><span class="token punctuation">(</span>producto<span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          <strong
+            >Habilitar el sobreescribir, pero no añadir nuevas ni borrar</strong
+          >
+          valors dentro del object
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+Object<span class="token punctuation">.</span><span class="token function">seal</span><span class="token punctuation">(</span>producto<span class="token punctuation">)</span>
+
+</code></pre>
+        <h2 id="destructuring-con-dos-o-más-objetos">
+          Destructuring con dos o más objetos
+        </h2>
+        <p>
+          La forma de invocar el valor de un object cuando se repite es
+          añadiendo un alias.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span> <span class="token punctuation">{</span>nombre<span class="token punctuation">,</span> precio<span class="token punctuation">}</span> <span class="token operator">=</span> producto
+
+  
+
+<span class="token comment">// Aquí no funciona porque la variable nombre se repite, así que se le asigna un alias.</span>
+
+<span class="token keyword">const</span> <span class="token punctuation">{</span>nombre<span class="token punctuation">:</span> nombreCliente<span class="token punctuation">,</span> premium<span class="token punctuation">}</span> <span class="token operator">=</span> cliente
+
+  
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>nombre<span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>nombreCliente<span class="token punctuation">)</span>
+
+</code></pre>
+        <h2 id="unir-dos-objetos-en-uno-sobreescribirlos">
+          Unir dos objetos en uno sobreescribirlos
+        </h2>
+        <p>
+          La forma de correcta de unir dos objetos sin perder información es con
+          las copias de spreed <strong>…</strong>
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  cliente <span class="token operator">=</span> <span class="token punctuation">{</span>
+
+nombre<span class="token punctuation">:</span>  <span class="token string">"Juan"</span><span class="token punctuation">,</span>
+
+premium<span class="token punctuation">:</span>  <span class="token boolean">true</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+<span class="token keyword">const</span>  unionObject <span class="token operator">=</span> <span class="token punctuation">{</span>
+
+producto<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token operator">...</span>producto<span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+cliente<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token operator">...</span>cliente<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>unionObject<span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Los tres puntos ( … ) dentro de las llaves {} es decir que se va crear
+          una copia del objeto, sin modificarle.
+        </p>
+        <h1 id="arreglos--arrays">Arreglos / Arrays</h1>
+        <p>
+          Los arreglos tiene algo de similitud a los objetos, sin embargo la
+          sintaxis, junto con el acceso a sus valores es diferente.
+        </p>
+        <p>Declarar un arreglos</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  tech <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token string">'Angular'</span><span class="token punctuation">,</span> <span class="token string">'React'</span><span class="token punctuation">]</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>tech<span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Para acceder a una propiedad o valor en especifico se busca por el
+          índice.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token comment">// Índice 0 1 2 3</span>
+
+<span class="token keyword">const</span>  tech <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token string">'Angular'</span><span class="token punctuation">,</span> <span class="token string">'React'</span><span class="token punctuation">]</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>tech<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Queda destacar que el índice siempre empieza en cero, por eso, aunque
+          nuestro valor sea el cuatro, contando a partir del cero, sería 3.
+        </p>
+        <p>
+          Si aplicamos un <em>typeof</em> al arreglo, no aparecerá que será de
+          tipo array, sino object.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span><span class="token keyword">typeof</span>  tech<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <p>Imprimir todo el arreglo como String</p>
+        <pre class="language-js"><code class="prism  language-js">
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>tech<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <h2 id="manipulación-de-arreglos">Manipulación de Arreglos</h2>
+        <p>Añadir elementos</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  tech <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'React'</span><span class="token punctuation">,</span> <span class="token string">'HTML'</span><span class="token punctuation">,</span> <span class="token string">'CSS'</span><span class="token punctuation">,</span> <span class="token string">'NodeJS'</span><span class="token punctuation">,</span> <span class="token string">'JS'</span><span class="token punctuation">]</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>tech<span class="token punctuation">)</span>
+
+  
+
+<span class="token comment">// Añadir elementos al array</span>
+
+  
+
+tech<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'MongoDB'</span><span class="token punctuation">)</span> <span class="token comment">// Añade el valor al final del array</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>tech<span class="token punctuation">)</span>
+
+  
+
+tech<span class="token punctuation">.</span><span class="token function">unshift</span><span class="token punctuation">(</span><span class="token string">'MongoDB'</span><span class="token punctuation">)</span> <span class="token comment">// Añade el valor al inicio del array</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>tech<span class="token punctuation">)</span>
+
+</code></pre>
+        <p>Forma optimizada para uso de React</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  nuevoArray <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>  tech<span class="token punctuation">,</span> <span class="token string">"MongoDB"</span><span class="token punctuation">]</span> <span class="token comment">// Añade el valor al final del array</span>
+
+<span class="token keyword">const</span>  nuevoArray2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"MongoDB"</span><span class="token punctuation">,</span> <span class="token operator">...</span>  tech<span class="token punctuation">]</span> <span class="token comment">// Añade el valor al inicio del array</span>
+
+</code></pre>
+        <p>
+          Recordemos que los … crean una copia del array, así que el original se
+          mantiene.
+        </p>
+        <p>Eliminar elementos</p>
+        <pre class="language-js"><code class="prism  language-js">
+tech<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token string">'MongoDB'</span><span class="token punctuation">)</span> <span class="token comment">// Elimina el valor al final del array</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>tech<span class="token punctuation">)</span>
+
+  
+
+tech<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token string">'MongoDB'</span><span class="token punctuation">)</span> <span class="token comment">// Elimina el valor al inicio del array</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>tech<span class="token punctuation">)</span>
+
+</code></pre>
+        <p>Forma optimizada para uso de React</p>
+        <pre class="language-js"><code class="prism  language-js">
+tech<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>tech<span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Borrara el índice 2, y sólo la posición 1. Si no se pone el segundo
+          número, borra todo lo que hay después del índice 2
+        </p>
+        <p>Reemplazar valores dentro de un Arrays</p>
+        <pre class="language-js"><code class="prism  language-js">
+tech<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'PHP'</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>tech<span class="token punctuation">)</span>
+
+</code></pre>
+        <p>Forma optimizada para React</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  remplazarArray <span class="token operator">=</span> tech<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>tech<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>tech  <span class="token operator">===</span>  <span class="token string">'React'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">return</span>  <span class="token string">'PHP'</span>
+
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">return</span>  tech
+
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>remplazarArray<span class="token punctuation">)</span>
+
+</code></pre>
+        <h2 id="destructuring-con-arreglos">Destructuring con arreglos</h2>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  tech <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'React'</span><span class="token punctuation">,</span> <span class="token string">'HTML'</span><span class="token punctuation">,</span> <span class="token string">'CSS'</span><span class="token punctuation">,</span> <span class="token string">'NodeJS'</span><span class="token punctuation">,</span> <span class="token string">'JS'</span><span class="token punctuation">]</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>tech<span class="token punctuation">)</span>
+
+  
+
+<span class="token keyword">const</span> <span class="token punctuation">[</span> <span class="token punctuation">,</span> <span class="token punctuation">,</span> <span class="token punctuation">,</span> <span class="token punctuation">,</span> var5<span class="token punctuation">]</span> <span class="token operator">=</span> tech
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>var5<span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Es similar a la forma en como se hace con los objetos, sin embargo
+          para extraer las posiciones, se usan los índices.
+        </p>
+        <p>
+          En el ejemplo de arriba existe un arreglo llamado <em>tech</em> el
+          cual consta de 4 índices, entonces para acceder a la 5 posicion o 4
+          índice se utilizan las comas, donde cada <strong>,</strong> representa
+          un índice.
+        </p>
+        <p>
+          Como verás no se ve muy amigable, por eso son mejores los objetos en
+          ese sentido.
+        </p>
+        <h1 id="iteradores">Iteradores</h1>
+        <h3 id="foreach">forEach</h3>
+        <p>
+          El iterador es la forma de recorrer un arreglo el número de veces que
+          sea su valor interno.
+        </p>
+        <p>
+          Es decir, si tenemos un array con 4 elementos o 3 índices, recordando
+          que el cero se cuenta, el forEach, pasara 4 veces por el arreglo.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  tech <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'React'</span><span class="token punctuation">,</span> <span class="token string">'HTML'</span><span class="token punctuation">,</span> <span class="token string">'CSS'</span><span class="token punctuation">,</span> <span class="token string">'NodeJS'</span><span class="token punctuation">,</span> <span class="token string">'JS'</span><span class="token punctuation">]</span>
+
+  
+
+<span class="token comment">// forEach</span>
+
+  
+
+tech<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>tech  <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>tech<span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+        <h3 id="map">map</h3>
+        <p>Map se comporta igual que el forEach</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token comment">// Map</span>
+
+  
+
+tech<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>tech  <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>tech<span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+        <p>
+          La Diferencia de uno con otro recae en que map te permite llenar un
+          nuevo arreglo con la iteración, mientras que forEach no, sólo itera.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  arrayMap <span class="token operator">=</span> tech<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>tech  <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">return</span> <span class="token punctuation">(</span>tech<span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>arrayMap<span class="token punctuation">)</span>
+
+</code></pre>
+        <h1 id="funciones">Funciones</h1>
+        <p>
+          El objetivo de una function declaration es ejecturar una tarea o
+          realizarla.
+        </p>
+        <p>
+          Al igual que las variables, se deben respetar ciertas cosas como que
+          el nombre de la function no debe empezar con
+        </p>
+        <ul>
+          <li>
+            <p>números</p>
+          </li>
+          <li>
+            <p>carácteres especiales</p>
+          </li>
+        </ul>
+        <p>
+          El ejemplo básico de cómo declarar una función es de la siguiente
+          manera.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token comment">// Funciones - Function Declaration</span>
+
+  
+
+<span class="token keyword">function</span>  <span class="token function">suma</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">5</span>  <span class="token operator">+</span>  <span class="token number">5</span><span class="token punctuation">)</span> <span class="token comment">//10</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token function">suma</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Se declara la función llamada suma, dónde no se le pasa ningun
+          paramentro pero dentro del cuerpo, es decir, dentro de las llaves está
+          la operación a realizar. En este caso es la suma de 5 + 5 y el
+          resultado de la operación se manda a imprimir
+        </p>
+        <p>
+          Es importante conocer que la función se puede llamar N veces sea
+          necesario. Así como no es necesario que se mande a llamar después de
+          crearla.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token function">suma</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+  
+
+<span class="token keyword">function</span>  <span class="token function">suma</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">5</span>  <span class="token operator">+</span>  <span class="token number">5</span><span class="token punctuation">)</span> <span class="token comment">//10</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre>
+        <p>
+          En este caso JS no es como otros lenguajes, aquí no marca err y la
+          función seguirá funcionando normal,. A esto se le llama
+          <strong>Hoisting</strong>
+        </p>
+        <h2 id="parametros-dentro-de-funciones">
+          Parametros dentro de Funciones
+        </h2>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">function</span>  <span class="token function">suma</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num1  <span class="token operator">+</span>  num2<span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token function">suma</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Lo que está dentro del parentesis <em>suma(5, 15)</em>, se conoce como
+          párametros.
+        </p>
+        <p>Lo que está entre las llaves es el cuerpo de la función.</p>
+        <p>
+          Y por último cuando se llama a la función <em>suma(5, 15)</em> se le
+          conoce como argumentos.
+        </p>
+        <p>
+          <strong
+            >¿Qué pasa si en vez de pasar dos argumentos se pasa 1, pero la
+            función está definida por dos parámentros.</strong
+          >
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">function</span>  <span class="token function">suma</span><span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num1  <span class="token operator">+</span>  num2<span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token function">suma</span><span class="token punctuation">(</span><span class="token number">150</span><span class="token punctuation">)</span> <span class="token comment">//NaN</span>
+
+</code></pre>
+        <p>
+          El resultado será <em>NaN</em> <strong>Not a number</strong>, porque
+          la función espera dos números.
+        </p>
+        <p>
+          Ahora, la función se le puede asignar un valor por defecto, y así
+          pasarle sólo un argumento aunque espere dos parámetros la función.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">function</span>  <span class="token function">suma</span><span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2 <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num1  <span class="token operator">+</span>  num2<span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token function">suma</span><span class="token punctuation">(</span><span class="token number">150</span><span class="token punctuation">)</span> <span class="token comment">// 160</span>
+
+</code></pre>
+        <p>
+          La función recibe el argumento, y cómo detecta que sólo hay una
+          párametro llenado, toma el segundo por default y la operación se
+          realiza.
+        </p>
+        <p>Se puede poner un valor por default y no usarlo.</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">function</span>  <span class="token function">suma</span><span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2 <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num1  <span class="token operator">+</span>  num2<span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token function">suma</span><span class="token punctuation">(</span><span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">)</span> <span class="token comment">// 300</span>
+
+</code></pre>
+        <p>
+          La salida de esta operación es <em>300</em>, pueto como si hay dos
+          argumentos, omite el valor por default dentro del paramentro y sigue
+          con la operación.
+        </p>
+        <h2 id="return-dentro-de-las-funciones">
+          Return dentro de las funciones
+        </h2>
+        <p>Funciones que retornan valores…</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">function</span>  <span class="token function">suma</span><span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2 <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">return</span>  num1  <span class="token operator">+</span>  num2
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span>  resultado <span class="token operator">=</span> <span class="token function">suma</span><span class="token punctuation">(</span><span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span> <span class="token comment">// 300</span>
+
+</code></pre>
+        <p>
+          En esa operación recibe los argumentos, los pasa como paramentros, y
+          retorna la operación.
+        </p>
+        <p>
+          Se crea una variable llamado resultado la cual aloja la operación y
+          por último lo mandamos a imprimir.
+        </p>
+        <h2 id="function-expression">Function Expression</h2>
+        <p>
+          Este es el segundo modo de las funciones, la cuál tiene dos grandes
+          diferencias notorias.
+        </p>
+        <ul>
+          <li>
+            <p>Su sintaxis</p>
+          </li>
+          <li>
+            <p>No se puede mandar a llamar antes de que se creó la función.</p>
+          </li>
+        </ul>
+        <h3 id="sintaxis">sintaxis</h3>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token comment">// Function declaration</span>
+
+<span class="token keyword">function</span>  <span class="token function">suma</span><span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2 <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num1  <span class="token operator">+</span>  num2<span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token function">suma</span><span class="token punctuation">(</span><span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">)</span> <span class="token comment">// 300</span>
+
+  
+
+<span class="token comment">// Function Expression</span>
+
+<span class="token keyword">const</span>  <span class="token function-variable function">sumar</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num1  <span class="token operator">+</span>  num2<span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+<span class="token function">sumar</span><span class="token punctuation">(</span><span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">)</span> <span class="token comment">// 300</span>
+
+</code></pre>
+        <p>
+          Como vemos la sintaxis es diferente, la segunda guarda la función
+          dentro de una variable. Fuera de eso podemos hacer casi lo mismo,
+          podemos poner valores por default dentro de los argumentos, y podemos
+          hacer el retorno dentro del cuerpo.
+        </p>
+        <h3 id="el-llamado">El llamado</h3>
+        <p>
+          A diferencia de la function declaration, la function expression sólo
+          puede ser llamada después de haberla creado de lo contrario mandaría
+          error.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token comment">// ❌</span>
+
+<span class="token function">sumar</span><span class="token punctuation">(</span><span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">)</span> <span class="token comment">// 300</span>
+
+  
+
+<span class="token keyword">const</span>  <span class="token function-variable function">sumar</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num1  <span class="token operator">+</span>  num2<span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+<span class="token comment">// ✅</span>
+
+<span class="token keyword">const</span>  <span class="token function-variable function">sumar</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num1  <span class="token operator">+</span>  num2<span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+<span class="token function">sumar</span><span class="token punctuation">(</span><span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">)</span> <span class="token comment">// 300</span>
+
+</code></pre>
+        <h2 id="arrow-functions">Arrow Functions</h2>
+        <p>Difenrencias entre una function expression y un arrow function</p>
+        <p>Sintaxis:</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token comment">// F. Expression</span>
+
+<span class="token keyword">const</span>  <span class="token function-variable function">sumar</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num1  <span class="token operator">+</span>  num2<span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+<span class="token function">sumar</span><span class="token punctuation">(</span><span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">)</span> <span class="token comment">// 300</span>
+
+  
+
+<span class="token comment">// Arrow F.</span>
+
+<span class="token keyword">const</span>  <span class="token function-variable function">sumar</span> <span class="token operator">=</span> <span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num1  <span class="token operator">+</span>  num2<span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+<span class="token function">sumar</span><span class="token punctuation">(</span><span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">)</span> <span class="token comment">// 300</span>
+
+</code></pre>
+        <p>
+          Se elimina la palabra <strong>function</strong> y se agrega un
+          <strong>=&gt;</strong> arrow (flecha) después del parentesis.
+        </p>
+        <p>
+          Todas estás funciones heredan los beneficios de las F. Expression, sin
+          embargo hay algo más. Pues cuando sólo tienes una linea de código
+          dentro del cuerpo de la función puedes expresarla de la siguiente
+          manera.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token comment">// Arrow F.</span>
+
+<span class="token keyword">const</span>  <span class="token function-variable function">sumar</span> <span class="token operator">=</span> <span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">return</span>  num1  <span class="token operator">+</span>  num2
+
+<span class="token punctuation">}</span>
+
+  
+
+<span class="token function">sumar</span><span class="token punctuation">(</span><span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">)</span> <span class="token comment">// 300</span>
+
+  
+
+<span class="token comment">// Arrow F. Simplificada</span>
+
+<span class="token keyword">const</span>  <span class="token function-variable function">sumar</span> <span class="token operator">=</span> <span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2<span class="token punctuation">)</span> <span class="token operator">=&gt;</span>  num1  <span class="token operator">+</span>  num2
+
+  
+
+<span class="token function">sumar</span><span class="token punctuation">(</span><span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">)</span> <span class="token comment">// 300</span>
+
+</code></pre>
+        <p>
+          Se nota que se puede elimar las llaves, y también el return, porque se
+          entiende con esta nueva sintaxis que el return va implicito.
+        </p>
+        <p>
+          <em
+            >Sólo funciona con una sóla linea de código, de lo contrario debes
+            agregar las llaves y el return funciona igual (implicito)</em
+          >
+        </p>
+        <p>
+          También cuando tienes dos parámetros dentro de la función si debes
+          poner los parentesis
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  <span class="token function-variable function">sumar</span> <span class="token operator">=</span> <span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2<span class="token punctuation">)</span> <span class="token operator">=&gt;</span>  num1  <span class="token operator">+</span>  num2
+
+</code></pre>
+        <p>Pero cuando sólo hay 1 parametro te los puedes ahorrar</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  <span class="token function-variable function">sumar</span> <span class="token operator">=</span> num  <span class="token operator">=&gt;</span>  num  <span class="token operator">+</span>  <span class="token number">15</span>
+
+</code></pre>
+        <p>
+          Los beneficios de los Arrow Functions se ve más claramente en el uso
+          de Arrays.
+        </p>
+        <h2 id="arrow-f.-con-arreglos.">Arrow F. con Arreglos.</h2>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  tech <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token string">'Angular'</span><span class="token punctuation">,</span> <span class="token string">'React'</span><span class="token punctuation">]</span>
+
+  
+
+<span class="token comment">// Con Arrow Function</span>
+
+  
+
+<span class="token keyword">const</span>  remplazarArray <span class="token operator">=</span> tech<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span> tech  <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>tech  <span class="token operator">===</span>  <span class="token string">'React'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">return</span>  <span class="token string">'PHP'</span>
+
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">return</span>  tech
+
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+
+  
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>remplazarArray<span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Recordemos que map nos ayuda a iterar por cada una de las posiciones
+          del arreglo, entonces con ayuda del arro función se crea la función
+          donde si se encuentra un valor llamado <em>React</em>, lo va a cambiar
+          por <em>PHP</em>
+        </p>
+        <p>Otro ejemplo pero con <em>filter</em></p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  filtrarArray <span class="token operator">=</span> tech<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span> tech  <span class="token operator">=&gt;</span>  tech  <span class="token operator">===</span>  <span class="token string">'React'</span> <span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>filtrarArray<span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Aplicamos nuestro arrow function, dónde por medio de filter vamos a
+          buscar la palabra <em>React</em>, y si la encontramos la regresamos
+          como arreglo.
+        </p>
+        <blockquote>
+          <p>
+            Nota: Es importante recordar que el método filter retorna un arreglo
+          </p>
+        </blockquote>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  filtrarArray <span class="token operator">=</span> tech<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span> tech  <span class="token operator">=&gt;</span>  tech  <span class="token operator">!==</span>  <span class="token string">'React'</span> <span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>filtrarArray<span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Ahora hacemos lo mismo, arrow function pero esta vez vamos a devolver
+          todo lo que sea diferente a la palabra <em>React</em>, recordemos el
+          operador lógico diferente a (<strong>!==</strong>).
+        </p>
+        <h1 id="array-methods-más-útiles">Array Methods más útiles</h1>
+        <h3 id="includes">Includes</h3>
+        <p>Includes comprueba si un elemento existe en el array</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  tech <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token string">'Angular'</span><span class="token punctuation">,</span> <span class="token string">'React'</span><span class="token punctuation">]</span>
+
+<span class="token keyword">const</span>  resultado <span class="token operator">=</span> tech<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token string">'Laravel'</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span> <span class="token comment">// false</span>
+
+</code></pre>
+        <h3 id="some">Some</h3>
+        <p>
+          Some devuelve su al menos uno cumple la condición pero devuelve un
+          valor booleano true/false y <strong>NO</strong> nos dice que elemento
+          es.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span>
+
+<span class="token keyword">const</span>  resultado <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">some</span><span class="token punctuation">(</span> numbers  <span class="token operator">=&gt;</span>  numbers  <span class="token operator">&gt;</span>  <span class="token number">15</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span> <span class="token comment">// true</span>
+
+</code></pre>
+        <h3 id="find">Find</h3>
+        <p>Find devuelve el primer elemento que cumpla con la condición.</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span>
+
+<span class="token keyword">const</span>  resultado <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span> numbers  <span class="token operator">=&gt;</span>  numbers  <span class="token operator">&gt;</span>  <span class="token number">15</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span> <span class="token comment">// 30</span>
+
+</code></pre>
+        <h3 id="every">Every</h3>
+        <p>Retorna true o false si todos cumplen con la condición</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span>
+
+<span class="token keyword">const</span>  resultado <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span> numbers  <span class="token operator">=&gt;</span>  numbers  <span class="token operator">&gt;</span>  <span class="token number">15</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span> <span class="token comment">// false</span>
+
+</code></pre>
+        <h3 id="reduce">Reduce</h3>
+        <p>
+          Suma todos los valores dentro del array, ideal para un carrito de
+          compras. el Reduce remplaza al forEach
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span>
+
+<span class="token keyword">const</span>  resultado <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span> <span class="token punctuation">(</span>total<span class="token punctuation">,</span> numero<span class="token punctuation">)</span> <span class="token operator">=&gt;</span>  total  <span class="token operator">+</span>  numero<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">//</span>
+
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span> <span class="token comment">// 90</span>
+
+</code></pre>
+        <p>
+          Después del arrow, o sea en el cuerpo de la función, debemos
+          establecer que <em>numero</em> (los números que se van iterando uno a
+          uno) se le debe sumar a total, y el <em>0</em> que definimos es lo que
+          indicamos como valor inicial.
+        </p>
+        <p>
+          En el ejemplo el resultado sería <strong>90</strong>, pero si
+          hubieramos puesto <em>100</em> como <mark>valor inicial</mark>, el
+          resultado hubiera sido <strong>190</strong>
+        </p>
+        <h1 id="condicionales">Condicionales</h1>
+        <p>Algunos operadores lóicos a tener en cuenta son:</p>
+        <p>| Descripción | Simbolo |</p>
+        <p>| :----: | :----: |</p>
+        <p>| Menor que | &lt; |</p>
+        <p>| Mayor que | &gt; |</p>
+        <p>| Menor igual que | &lt;= |</p>
+        <p>| Menor igual que | &gt;= |</p>
+        <p>| Diferente que | != |</p>
+        <p>| Igual a | == |</p>
+        <p>| Estrictamente igual a | === |</p>
+        <p>| Or / o | || |</p>
+        <p>| And / y | &amp;&amp; |</p>
+        <h3 id="if">if</h3>
+        <p>
+          Las condicionales son fragmentos de código que básicamente su función
+          es ver si una condición se cumple ejecuta un código, sino otra.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">let</span>  fondo <span class="token operator">=</span> <span class="token number">5000</span>
+
+<span class="token keyword">let</span>  retiro <span class="token operator">=</span> <span class="token number">100</span>
+
+  
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>fondo  <span class="token operator">&gt;</span>  retiro<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token comment">// Se puede retirar dinero</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Excelente, si puedes retirar"</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+
+<span class="token comment">// No se puede retirar</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Lo siento, no puedes retirar dinero"</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre>
+        <p>
+          Se plantea un ejemplo de un ATM o cajero de banco donde el usuario
+          tiene un fondo que simula la cantidad de dinero disonible en su
+          cuenta, y segundo tiene un monto a retirar.
+        </p>
+        <p>
+          Ambas variables se meten dentro de una condicional <em>if</em> donde
+          se evalua que si el fondo es mayor a lo que el usuario piensa retirar
+          le permite continuar con la operación, de lo contrario le rechazará el
+          retiro.
+        </p>
+        <p>Otro ejemplo que nos ayudará a entender mejor las condicionales.</p>
+        <pre class="language-js"><code class="prism  language-js">
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"**Banco de Bruce**"</span><span class="token punctuation">)</span>
+
+  
+
+<span class="token keyword">const</span>  saldo <span class="token operator">=</span> <span class="token number">600</span>
+
+<span class="token keyword">const</span>  pagar <span class="token operator">=</span> <span class="token number">400</span>
+
+<span class="token keyword">const</span>  tarjeta <span class="token operator">=</span> <span class="token boolean">true</span>
+
+  
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>saldo  <span class="token operator">&gt;</span>  pagar<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Puedes pagar"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span> <span class="token keyword">else</span>  <span class="token keyword">if</span> <span class="token punctuation">(</span>tarjeta  <span class="token operator">==</span>  <span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Puedes pagar"</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"No puedes pagar."</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre>
+        <p>Reduciendo código</p>
+        <pre class="language-js"><code class="prism  language-js">
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"**Banco de Bruce**"</span><span class="token punctuation">)</span>
+
+  
+
+<span class="token keyword">const</span>  saldo <span class="token operator">=</span> <span class="token number">600</span>
+
+<span class="token keyword">const</span>  pagar <span class="token operator">=</span> <span class="token number">400</span>
+
+<span class="token keyword">const</span>  tarjeta <span class="token operator">=</span> <span class="token boolean">true</span>
+
+  
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>saldo  <span class="token operator">&gt;</span>  pagar<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Puedes pagar"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span> <span class="token keyword">else</span>  <span class="token keyword">if</span> <span class="token punctuation">(</span>tarjeta<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Puedes pagar"</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"No puedes pagar."</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre>
+        <p>
+          En el <em>else if</em> se asume que la condición se cumple, por eso no
+          es necesario poner la asignación <em>tarjeta == true</em>
+        </p>
+        <p>Reduciendo más el código</p>
+        <pre class="language-js"><code class="prism  language-js">
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"**Banco de Bruce**"</span><span class="token punctuation">)</span>
+
+  
+
+<span class="token keyword">const</span>  saldo <span class="token operator">=</span> <span class="token number">600</span>
+
+<span class="token keyword">const</span>  pagar <span class="token operator">=</span> <span class="token number">400</span>
+
+<span class="token keyword">const</span>  tarjeta <span class="token operator">=</span> <span class="token boolean">true</span>
+
+  
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>saldo  <span class="token operator">&gt;</span>  pagar  <span class="token operator">||</span>  tarjeta<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Puedes pagar"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"No puedes pagar."</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre>
+        <h3 id="if-ternario">If ternario</h3>
+        <p>
+          Es básicamente un if normal, pero en una sóla linea. Acá la
+          diferencia.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  autenticado <span class="token operator">=</span> <span class="token boolean">true</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>autenticado<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Si está autenticado"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"No está autenticado"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre>
+        <p>
+          Ahora con <mark><strong>if ternario</strong></mark>
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  autenticado <span class="token operator">=</span> <span class="token boolean">true</span>
+
+autenticado  <span class="token operator">?</span>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Si esta autenticado"</span><span class="token punctuation">)</span> <span class="token punctuation">:</span>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"No está autenticado"</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <blockquote>
+          <p>
+            Nota: También puede haber if ternarios dentro de otros if ternarios.
+          </p>
+        </blockquote>
+        <h1 id="scope-de-variables">Scope de variables</h1>
+        <p>
+          El alcance de las variables tiene que ver sobre dónde puedes ocupar
+          tus variables. Recordemos que en JS no puedes declarar dos variables
+          con el mismo nombre, pero cuando ocupas variables cambia un poco la
+          situación.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  precio <span class="token operator">=</span> <span class="token number">600</span>
+
+  
+
+<span class="token keyword">function</span>  <span class="token function">scope</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">const</span>  precio <span class="token operator">=</span> <span class="token number">1500</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>precio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token function">scope</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 1500</span>
+
+</code></pre>
+        <p>
+          Como se ve hay dos variables nombradas <em>precio</em>, pero cuál será
+          el resultado a imprimir? Fácil: 1500 puesto que la variable precio
+          dentro de la función tiene prioridad sobre la global que está fuera.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  precio <span class="token operator">=</span> <span class="token number">600</span>
+
+  
+
+<span class="token keyword">function</span>  <span class="token function">scope</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>precio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token function">scope</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 600</span>
+
+</code></pre>
+        <p>
+          En este caso, como no existe una variable local, toma la que viene de
+          afuera (global), y por eso el resultado es <em>600</em>
+        </p>
+        <h1 id="dom">DOM</h1>
+        <p>
+          El <strong>DOM</strong> es todo el documento que muestra nuestro HTML
+        </p>
+        <pre class="language-html"><code class="prism  language-html">
+<span class="token doctype">&lt;!DOCTYPE  html&gt;</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span>  <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span>  <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span>  <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>X-UA-Compatible<span class="token punctuation">"</span></span>  <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>IE=edge<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span>  <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span>  <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>DOM<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre>
+        <h2 id="queryselector">querySelector</h2>
+        <p>Accediendo a una clase del DOM / document desde JS</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  heading <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">".heading"</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>heading<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+        <p>
+          Se genera una variable con el mismo nombre de la clase que se quiere
+          obtener, se le asigna por un <em>=</em> al document dónde buscaremos
+          nuestra clase y por medio del <em>querySelector</em> accedemos a la
+          clase ‘.heading’.
+        </p>
+        <p>Accediendo a un id del DOM / document desde JS</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  heading <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#heading"</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>heading<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+        <p>
+          Se hace de la misma manera, solo que despupes del querySelector se
+          pone un <em>#</em> en vez de un <em>.</em>.
+        </p>
+        <blockquote>
+          <p>
+            Nota: Es importante conocer que querySelector sólo te va a retornar
+            un elemento.
+          </p>
+        </blockquote>
+        <h2 id="queryselectorall">querySelectorAll</h2>
+        <p>
+          A diferencia de querySelector, en este traemos toda la colección que
+          contenga nuestra selelección.
+        </p>
+        <p>Si en el documento (html) tenemos</p>
+        <pre class="language-html"><code class="prism  language-html">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nav nav-masthead justify-content-center float-md-end<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nav-link<span class="token punctuation">"</span></span>  <span class="token attr-name">aria-current</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span>  <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>index.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Inicio<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nav-link active<span class="token punctuation">"</span></span>  <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>DOM.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>DOM<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre>
+        <p>y en el JS</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  navegacion <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">"#navegacion a"</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>navegacion<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+        <p>
+          Como vemos, aplicamos un querySelectorAll a navegación con el id
+          navegacion y con el enlace (Anchor <strong><a></a></strong>) como
+          hijo. Eso nos arrojará un arreglo al momento de mandarlo a imprimir
+          con el console.log.
+        </p>
+        <h2 id="modificando-el-dom-desde-js">Modificando el DOM desde JS</h2>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  heading <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#heading"</span><span class="token punctuation">)</span>
+
+heading<span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token string">"Un nuevo titulo desde JS 😲"</span>
+
+</code></pre>
+        <p>
+          Para cambiar un valor de nuestro HTML pero desde JS, lo debemos llamar
+          con un <em>querySelector</em> y despues le asignamos con el nombre de
+          la variable lo concatenamos y le asignamos el nuevo texto.
+        </p>
+        <p>Y así funciona para nuestro código del DOM. Hagamos otra prueba.</p>
+        <pre class="language-html"><code class="prism  language-html">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- Name input --&gt;</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>form-outline mb-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>form-outline<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>form-label<span class="token punctuation">"</span></span>  <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Nombre<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>  <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>  <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span>  <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dimebruce<span class="token punctuation">"</span></span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>form-control<span class="token punctuation">"</span></span>  <span class="token punctuation">/&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+  
+
+<span class="token comment">&lt;!-- Password input --&gt;</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>form-outline mb-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>form-label<span class="token punctuation">"</span></span>  <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Password<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>  <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span>  <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span>  <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>********<span class="token punctuation">"</span></span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>form-control<span class="token punctuation">"</span></span>  <span class="token punctuation">/&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+  
+
+<span class="token comment">&lt;!-- Submit button --&gt;</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>  <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary btn-block mb-4 w-100<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+Login
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre>
+        <p>
+          Tenemos ese formulario, ahora lo vamos a modificar desde JS de la
+          siguiente manera.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  inputName <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'#name'</span><span class="token punctuation">)</span>
+
+inputName<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">"Ya no es dimebruce, sino Mr. Wayne 🦇"</span>
+
+</code></pre>
+        <p>
+          Si antes en el input no había nada de nombre, ahora aparecerá un valor
+          por defecto diciendo
+          <mark>Ya no es dimebruce, sino Mr. Wayne 🦇</mark>
+        </p>
+        <p>Para remplazar todos los enlaces de la navegación sería así</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  enlaces <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">".navegacion a"</span><span class="token punctuation">)</span>
+
+enlaces<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span> enlaces  <span class="token operator">=&gt;</span>  enlaces<span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token string">"Nueva Tech"</span> <span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Primero hacemos la selección de navegación, luego iteramos por un
+          forEach y con una arrow function cambiamos el nombre a cada enlace.
+        </p>
+        <h1 id="eventos-del-dom">Eventos del DOM</h1>
+        <p>
+          Los eventos son metodos que nos otorga JS que están en espera de una
+          acción.
+        </p>
+        <h2 id="evento-de-click">Evento de click</h2>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  heading <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#heading"</span><span class="token punctuation">)</span>
+
+  
+
+heading<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+heading<span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token string">"Nuevo titulo a un click 🧙‍♂️"</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Llamaos el id llamado heading, lo guardamos en una variable con el
+          mismo nombre.
+        </p>
+        <p>
+          Después concatenamos la variable recien creada con el evento
+          <strong>addEventListener</strong>, dentro de ese método indicamos que
+          usaremos el evento ‘click’ y después ejecutamos un arrow function
+          anónima (sin parametros) el cuál tendrá en el cuerpo de la función
+          asignarle el nuevo titulo
+          <mark>Nuevo titulo a un click 🧙‍♂️</mark> cuando el usuario le de click
+          en el DOM.
+        </p>
+        <h2 id="evento-de-inputs">Evento de inputs</h2>
+        <p>Cómo detectar lo que está escribiendo el user dentro de un input</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  name <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#name"</span><span class="token punctuation">)</span>
+
+  
+
+name<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'input'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Llamamos nuestro id del DOM a JS, lo asignamos a nuestra variale
+          <em>name</em>, después creamos nuestro evento, le decimos que será del
+          tipo <em>submit</em> y creamos nuestra arrow function, donde le
+          pasaremos el parametro <em>e</em> de event y mandamos a imprimir a
+          consola todo lo que el user está escribiendo en el DOM.
+        </p>
+        <p>
+          Ahora se puede jugar con esto de muchas maneras, sin embargo hagamos
+          otro ejemplo
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  password <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#password"</span><span class="token punctuation">)</span>
+
+password<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'input'</span><span class="token punctuation">,</span> mostrarPassword<span class="token punctuation">)</span>
+
+  
+
+<span class="token keyword">function</span>  <span class="token function">mostrarPassword</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+password<span class="token punctuation">.</span>type <span class="token operator">=</span> <span class="token string">"text"</span>
+
+  
+
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+password<span class="token punctuation">.</span>type <span class="token operator">=</span> <span class="token string">"Password"</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre>
+        <p>
+          Traemos el id, lo asignamos y creamos nuestro addEventListener
+          concatenado a la variable que hicimos la cual indicamos que será de
+          tipo submit y ejecutaremos una función cuando este pase.
+        </p>
+        <p>
+          mostrarPassword será la función a ejecutar, que otras palabras lo que
+          hace es que el input del DOM con type password, lo convierte en text
+          cuando se ejecuta, pero despúes de 1 segundo con el setTimeout lo
+          convierte a type password nuevamente.
+        </p>
+        <h2 id="evento-de-submit">Evento de submit</h2>
+        <p>
+          Este evento se trata de enviar data o información de un formulario de
+          HTML a JS para la operación de la misma.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  form <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.formulario'</span><span class="token punctuation">)</span>
+
+form<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'submit'</span><span class="token punctuation">,</span> e  <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+  
+
+<span class="token keyword">const</span>  name <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#name"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value
+
+<span class="token keyword">const</span>  password <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#password"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value
+
+  
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> <span class="token string">" - "</span><span class="token punctuation">,</span> password<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Enviaste información"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Ahora, podemos agregar validaciones sencillas para que el user pueda
+          si o si llenar el form para que se mande la data.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  form <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.formulario'</span><span class="token punctuation">)</span>
+
+form<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'submit'</span><span class="token punctuation">,</span> e  <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// Previene la acción por default</span>
+
+  
+
+<span class="token comment">// Chaining .value porque trae el valor que contiene ese input</span>
+
+<span class="token keyword">const</span>  name <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#name"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value
+
+<span class="token keyword">const</span>  password <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#password"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value
+
+  
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>name  <span class="token operator">===</span>  <span class="token string">''</span>  <span class="token operator">||</span>  password  <span class="token operator">===</span>  <span class="token string">''</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Todos los campos son obligatorios"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Enviando la data ..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Vemos un <em>if</em> donde pregunta que si el input name o password es
+          igual a vacio, entonces mandará una alerta diciendo que todos los
+          campos son obligatorios, de lo contrario se manda la data por el
+          submit y se imprime el mensaje Enviando la data …
+        </p>
+        <h2 id="agregando-html-desde-js">Agregando HTML desde JS</h2>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  form <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'#formulario'</span><span class="token punctuation">)</span>
+
+form<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'submit'</span><span class="token punctuation">,</span> e  <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// Previene la acción por default</span>
+
+  
+
+<span class="token comment">// Chaining .value porque trae el valor que contiene ese input</span>
+
+<span class="token keyword">const</span>  name <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#name"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value
+
+<span class="token keyword">const</span>  password <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#password"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value
+
+  
+
+<span class="token keyword">const</span>  alertPrevia <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.alert'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>alertPrevia<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+alertPrevia<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+<span class="token keyword">const</span>  alert <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'DIV'</span><span class="token punctuation">)</span>
+
+alert<span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'alert'</span><span class="token punctuation">)</span>
+
+  
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>name  <span class="token operator">===</span>  <span class="token string">''</span>  <span class="token operator">||</span>  password  <span class="token operator">===</span>  <span class="token string">''</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+alert<span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token string">"Todos los campos son obligatorios"</span>
+
+alert<span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'alert'</span><span class="token punctuation">,</span> <span class="token string">'alert-danger'</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+
+alert<span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token string">"Enviando la DATA ..."</span>
+
+alert<span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'alert'</span><span class="token punctuation">,</span> <span class="token string">'alert-success'</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+form<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>alert<span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>alert<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <p>El código parece grande, pero es más simple de lo que se ve.</p>
+        <p>Lo único nuevo aquí al code anterior es que generamos un div</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  alert <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'DIV'</span><span class="token punctuation">)</span>
+
+alert<span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'alert'</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Se genera el div en mayúsculas porque es de buenas practicas, al final
+          el DOM lo interpreta y lo hace minuscula, en fin, se genera con
+          <em>createElement</em> concatenado al documento.
+        </p>
+        <p>
+          Asignamos una clase con la variable creada, concatenada con
+          <em>classList</em> y <em>add</em> y le pasamos alert. Ahora en el el
+          if mandamos el texto a imprimir segun sea el caso con el textContent y
+          lo pintamos con <em>alert-danger</em> o <em>alert-success</em>.
+        </p>
+        <p>
+          Ahora, para mandar el div que creamos al DOM ocupamos la siguiente
+          linea.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+form<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>alert<span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Y listo, así se manda una etiqueta HTML, con texto y estilos desde JS
+        </p>
+        <h2 id="imports-y-exports">Imports y Exports</h2>
+        <p>
+          La intención de esta sección es comprender que se tiene que optimizar
+          el código lo más que se pueda, para este caso ocuparemos una función
+          creada en un archivo JS nombrado suma.js el cual tendrá dicha función
+          sólo en ese archivo pero lo usaremos en el archivo 28.js para
+          mandarlos al index.html
+        </p>
+        <h2 id="exportando">Exportando</h2>
+        <p>archivo suma.js</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">function</span>  <span class="token function">suma</span><span class="token punctuation">(</span>num1 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> num2 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">return</span>  num1  <span class="token operator">+</span>  num2
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span>  <span class="token keyword">default</span>  suma
+
+</code></pre>
+        <p>
+          Vemos una función simple, que tiene 2 paramentros y que retorna la
+          suma de los dos números.
+        </p>
+        <p>Por último, exportamos la función suma con el default.</p>
+        <p>
+          El <mark>default</mark> lo ocupamos cuando sólo tenemos una función a
+          exportar
+        </p>
+        <h2 id="importando">Importando</h2>
+        <p>Vamos a nuestros archivo 28.js</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">import</span>  comoquieras  <span class="token keyword">from</span>  <span class="token string">"./suma.js"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span>  resultado <span class="token operator">=</span> <span class="token function">comoquieras</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 50</span>
+
+</code></pre>
+        <p>
+          Importamos, con la palabra reservada <em>import</em> le ponemos la
+          palabra o variable que nosotros queramos porque en el export está como
+          <em>default</em> y le decimos la ruta de nuestro archivo.
+        </p>
+        <p>
+          Creamos la variable resultado donde guardaremos el resultado de la
+          función comoquieras(20,30)
+        </p>
+        <p>Y lo mandamos a imprimir por el log a resultado.</p>
+        <blockquote>
+          <p>
+            Nota: Esto nos va a generar un error, llamado: “Uncaught
+            SyntaxError: Cannot use import statement outside a module”
+          </p>
+        </blockquote>
+        <p>
+          El cual se soluciona yendo al index.html, donde importamos el script
+          28.js
+        </p>
+        <p>Pasar de esto</p>
+        <pre class="language-html"><code class="prism  language-html">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span>  <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>./js/28.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre>
+        <p>A esto:</p>
+        <pre class="language-html"><code class="prism  language-html">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span>  <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>./js/28.js<span class="token punctuation">"</span></span>  <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre>
+        <blockquote>
+          <p>Nota: Agrega el type module dentro del script del HTML</p>
+        </blockquote>
+        <p>Y con ello tendremos el resultado de la suma en la consola.</p>
+        <h2 id="exportando-e-importando-con-más-de-una-función">
+          Exportando e importando con más de una función
+        </h2>
+        <p>
+          Todo lo que vimos anteriormente fue con una sola función, pero qué
+          pasa si nuestro archivo tiene más de una función …
+        </p>
+        <p>archivo suma.js</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">function</span>  <span class="token function">suma</span><span class="token punctuation">(</span>num1 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> num2 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">return</span>  num1  <span class="token operator">+</span>  num2
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span>  <span class="token function">resta</span><span class="token punctuation">(</span>num1 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> num2 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">return</span>  num1  <span class="token operator">-</span>  num2
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span>
+
+suma<span class="token punctuation">,</span>
+
+resta
+
+<span class="token punctuation">}</span>
+
+</code></pre>
+        <p>archivo 28.js</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">import</span> <span class="token punctuation">{</span>suma<span class="token punctuation">,</span> resta<span class="token punctuation">}</span> <span class="token keyword">from</span>  <span class="token string">"./suma.js"</span><span class="token punctuation">;</span>
+
+  
+
+<span class="token keyword">const</span>  resultadoSuma <span class="token operator">=</span> <span class="token function">suma</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span>  resultadoResta <span class="token operator">=</span> <span class="token function">resta</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span>
+
+  
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>resultadoSuma<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>resultadoResta<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+        <p>
+          Analicemos, en suma.js lo que hicimos es un nuevo export pero en forma
+          de objeto {}
+        </p>
+        <p>donde ponemos suma, resta en el cuerpo.</p>
+        <p>
+          Recordemos que se puede omitir el segundo valor del objeto, siempre y
+          cuando el nombre sea igual, así que por eso pasamos de esto:
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token operator">...</span>
+
+  
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span>
+
+suma<span class="token punctuation">:</span> suma<span class="token punctuation">,</span>
+
+resta<span class="token punctuation">:</span> resta
+
+<span class="token punctuation">}</span>
+
+</code></pre>
+        <p>A esto:</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token operator">...</span>
+
+  
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span>
+
+suma<span class="token punctuation">,</span>
+
+resta
+
+<span class="token punctuation">}</span>
+
+</code></pre>
+        <p>
+          En el archivo 28.js. importaremos igual, pero haciendo el
+          Destructuring Object ya visto en este repaso.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">import</span> <span class="token punctuation">{</span>suma<span class="token punctuation">,</span> resta<span class="token punctuation">}</span> <span class="token keyword">from</span>  <span class="token string">"./suma.js"</span><span class="token punctuation">;</span>
+
+</code></pre>
+        <p>
+          En el cual importamos suma y resta, es importante que aquí si ocupemos
+          el nombre que tenemos donde se declaró la función, de lo contrario no
+          funcionará. Y el resto se lee por sí solo.
+        </p>
+        <h1 id="api">API’</h1>
+        <h2 id="fetch-api---promises.">Fetch API - Promises.</h2>
+        <p>
+          Fecth es como el nuevo AJAX. Es la parte que te ayuda a consumir una
+          API de otro servidor para tu página.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  url <span class="token operator">=</span> <span class="token string">"https://rickandmortyapi.com/api/character"</span>
+
+  
+
+<span class="token keyword">const</span>  <span class="token function-variable function">cunsultarAPI</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+<span class="token function">fetch</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token punctuation">(</span>respuesta<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">return</span>  respuesta<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token punctuation">(</span>resultado<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+<span class="token function">cunsultarAPI</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <blockquote>
+          <p>Nota: Los then es la forma visual de que existe una promesa.</p>
+        </blockquote>
+        <p>
+          Creamos una variable llamada url, donde alojaremos el link de la API.
+        </p>
+        <p>
+          Después creamos una función dónde tendremos un fetch de la url creada.
+        </p>
+        <p>
+          Ahora, empezamos con la promesa <em>.then</em> donde si existe, cree
+          toda la data que viene con ella con un formateo .json
+        </p>
+        <p>Y por último mandamos a imprimir el resultado.</p>
+        <blockquote>
+          <p>
+            Nota: Es importante saber que las promesas tienen dos estados;
+            respuesta y resultado.
+          </p>
+        </blockquote>
+        <p>Haciendo más chico el código.</p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  url <span class="token operator">=</span> <span class="token string">"https://rickandmortyapi.com/api/character"</span>
+
+  
+
+<span class="token keyword">const</span>  <span class="token function-variable function">cunsultarAPI</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+<span class="token function">fetch</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> respuesta  <span class="token operator">=&gt;</span>respuesta<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span>
+
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> resultado  <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token function">cunsultarAPI</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <h2 id="cambiando-de-promises-a-async-y-await">
+          Cambiando de Promises a Async y Await
+        </h2>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  url <span class="token operator">=</span> <span class="token string">"https://rickandmortyapi.com/api/character"</span>
+
+  
+
+<span class="token keyword">const</span>  cunsultarAPI <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">const</span>  respuesta <span class="token operator">=</span> <span class="token keyword">await</span>  <span class="token function">fetch</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+
+<span class="token keyword">const</span>  resultado <span class="token operator">=</span> <span class="token keyword">await</span>  respuesta<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token function">cunsultarAPI</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          A simple vista, async y await nos genera menos código y con el mismo
+          resultado.
+        </p>
+        <p>
+          La diferencia más poderosa es saber que nuestra función se vueve
+          asincrona, lo que significa que por cada await nuestro código no se
+          ejecutará hasta que no termine con el await en marcha.
+        </p>
+        <h2 id="conexiones-mmúltiples-con-async-y-await">
+          Conexiones mmúltiples con async y await
+        </h2>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  url <span class="token operator">=</span> <span class="token string">"https://rickandmortyapi.com/api/character"</span>
+
+<span class="token keyword">const</span>  url2 <span class="token operator">=</span> <span class="token string">"https://rickandmortyapi.com/api/episode"</span>
+
+  
+
+<span class="token keyword">const</span>  cunsultarAPI <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">const</span>  respuesta <span class="token operator">=</span> <span class="token keyword">await</span>  <span class="token function">fetch</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+
+<span class="token keyword">const</span>  resultado <span class="token operator">=</span> <span class="token keyword">await</span>  respuesta<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  
+
+<span class="token keyword">const</span>  respuesta2 <span class="token operator">=</span> <span class="token keyword">await</span>  <span class="token function">fetch</span><span class="token punctuation">(</span>url2<span class="token punctuation">)</span>
+
+<span class="token keyword">const</span>  resultado2 <span class="token operator">=</span> <span class="token keyword">await</span>  respuesta2<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>resultado2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+<span class="token function">cunsultarAPI</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Vemos que existen dos url con rutas difentes, el consumo es el mismo.
+          Sin embargo hay problema no notorio para este tipo de links genericos,
+          pero si posibles para producción.
+        </p>
+        <p>
+          Y es que al hacerlo de esta manera, el consumo de la primera url, toma
+          su tiempo y lo hace por partes como ya habíamos dicho, y eso hace que
+          el consumo de la segunda url quede en espera y eso está mal. Porque el
+          segundo consumo no depende del primero.
+        </p>
+        <h2 id="iniciando-el-consumo-en-paralelo">
+          Iniciando el consumo en paralelo
+        </h2>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  cunsultarAPI2 <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">const</span> <span class="token punctuation">[</span>respuesta<span class="token punctuation">,</span> respuesta2<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">await</span>  Promise<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token function">fetch</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">fetch</span><span class="token punctuation">(</span>url2<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span>  resultado <span class="token operator">=</span> <span class="token keyword">await</span>  respuesta<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span>  resultado2 <span class="token operator">=</span> <span class="token keyword">await</span>  respuesta2<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>resultado2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre>
+        <p>
+          Está es la forma eficiente de consumir dos APIs que no dependen de sí
+          mismas, ya que las dos se ejecutan al mismo tiempo y la respuesta se
+          guarda dentro de un <strong>array destructuring</strong>.
+        </p>
+        <blockquote>
+          <p>
+            Nota: Puede que una respuesta tarde más que otra, eso dependerá del
+            tamaño de la API.
+          </p>
+        </blockquote>
+        <p>
+          Por último traemos el resultado y lo formateamos con respuesta.json()
+        </p>
+        <h1 id="comprobando-el-tiempo-de-consumo">
+          Comprobando el tiempo de consumo
+        </h1>
+        <h2 id="performance">Performance</h2>
+        <p>
+          Existe un método de JS llamado Performance el cual permite el
+          cronometraje de alguna ejecución.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token function">cunsultarAPI</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+  
+
+<span class="token keyword">const</span>  cunsultarAPI2 <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+<span class="token keyword">const</span>  inicio <span class="token operator">=</span> performance<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+  
+
+<span class="token keyword">const</span> <span class="token punctuation">[</span>respuesta<span class="token punctuation">,</span> respuesta2<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">await</span>  Promise<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token function">fetch</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">fetch</span><span class="token punctuation">(</span>url2<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span>  resultado <span class="token operator">=</span> <span class="token keyword">await</span>  respuesta<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span>  resultado2 <span class="token operator">=</span> <span class="token keyword">await</span>  respuesta2<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>resultado2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span>  fin <span class="token operator">=</span> performance<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Tiempo de Segundo </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>fin<span class="token operator">-</span>inicio<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+<span class="token function">cunsultarAPI2</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre>
+        <p>
+          Sólo basta con ir a la console y comprobar qué método es más rapido.
+        </p>
+        <h2 id="template-strings">Template Strings</h2>
+        <p>
+          El uso de esto es básicamente concatenar variables con strings o
+          funciones.
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+<span class="token keyword">const</span>  producto <span class="token operator">=</span> <span class="token string">"Computadora Alienware"</span>
+
+<span class="token keyword">const</span>  precio <span class="token operator">=</span> <span class="token number">100</span>
+
+<span class="token keyword">const</span>  color <span class="token operator">=</span> <span class="token string">"Roja"</span>
+
+  
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Producto: "</span>  <span class="token operator">+</span>  producto  <span class="token operator">+</span>  <span class="token string">", Precio: "</span><span class="token operator">+</span>  precio  <span class="token operator">+</span>  <span class="token string">", Color: "</span><span class="token operator">+</span>  color  <span class="token operator">+</span>  <span class="token string">"."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+        <p>
+          Está era una de las formas de imprimir el valor de las variables
+          otorgandole un pequeño formateo entre ellas, también existe la
+          siguiente:
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Producto: "</span> <span class="token punctuation">,</span> producto <span class="token punctuation">,</span> <span class="token string">", Precio: "</span><span class="token punctuation">,</span> precio <span class="token punctuation">,</span> <span class="token string">", Color: "</span><span class="token punctuation">,</span> color <span class="token punctuation">,</span> <span class="token string">"."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+        <p>
+          De la misma forma, pero en vez del símbolo de plus
+          (<strong>+</strong>) se usa la coma (<strong>,</strong>)
+        </p>
+        <p>
+          Pero ninguna de las dos formas es funcional. Para ello se creó el
+          <mark>Template String</mark>
+        </p>
+        <pre class="language-js"><code class="prism  language-js">
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Producto: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>producto<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">, Precio: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>precio<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">, Color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>color<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">.`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+        <p>Es más eficiente y más clara. ☺</p>
+      </div>
+    </div>
+  </body>
+</html>
